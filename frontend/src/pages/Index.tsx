@@ -27,7 +27,7 @@ const IndexPage = () => {
 
   const skillsData = [
     {
-      title: 'Cloud & Infrastructure',
+      title: 'Ccccloud & Infrastructure',
       skills: ['AWS (EC2, S3, IAM, VPC, EKS)', 'Linux (Ubuntu)', 'Windows']
     },
     {
