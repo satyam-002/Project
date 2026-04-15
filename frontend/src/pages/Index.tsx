@@ -27,7 +27,7 @@ const IndexPage = () => {
 
   const skillsData = [
     {
-      title: 'Ccccloud & Infrastructure',
+      title: 'Cloud & Infrastructure',
       skills: ['AWS (EC2, S3, IAM, VPC, EKS)', 'Linux (Ubuntu)', 'Windows']
     },
     {
@@ -54,7 +54,7 @@ const IndexPage = () => {
 
   const projectsData = [
     {
-      title: 'Cloud-Native Monitoring & Deployment (AWS EKS)',
+      title: 'Ccccloud-Native Monitoring & Deployment (AWS EKS)',
       description: 'Deployed Kubernetes workloads on AWS EKS with Prometheus & Grafana for real-time monitoring and observability.',
       technologies: ['AWS (EKS, EC2, IAM)', 'Kubernetes', 'Docker', 'Prometheus', 'Grafana', 'Linux'],
       imageUrl: '/assets/P1.jpg',
