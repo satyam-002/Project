@@ -54,7 +54,7 @@ const IndexPage = () => {
 
   const projectsData = [
     {
-      title: 'Ccccloud-Native Monitoring & Deployment (AWS EKS)',
+      title: 'Cloud-Naaative Monitoring & Deployment (AWS EKS)',
       description: 'Deployed Kubernetes workloads on AWS EKS with Prometheus & Grafana for real-time monitoring and observability.',
       technologies: ['AWS (EKS, EC2, IAM)', 'Kubernetes', 'Docker', 'Prometheus', 'Grafana', 'Linux'],
       imageUrl: '/assets/P1.jpg',
