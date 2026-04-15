@@ -13,8 +13,8 @@ spec:
         app: frontend
     spec:
       containers:
-      - name: frontend
-        image: my-frontend
-        imagePullPolicy: Never
-        ports:
-        - containerPort: 80
+        - name: frontend
+          image: my-frontend:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 80

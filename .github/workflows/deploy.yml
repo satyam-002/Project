@@ -14,13 +14,13 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build Docker Image
-        run: docker build -t my-frontend:latest ./frontend
+        run: docker build -t my-frontend:${{ github.sha }} ./frontend
 
       - name: Load Image into Minikube
-        run: minikube image load my-frontend:latest
+        run: minikube image load my-frontend:${{ github.sha }}
 
-      - name: Deploy to Kubernetes
-        run: kubectl apply -f k8s/
+      - name: Update Kubernetes Deployment Image
+        run: kubectl set image deployment/frontend-deployment frontend=my-frontend:${{ github.sha }}
 
-      - name: Restart Deployment
+      - name: Restart rollout
         run: kubectl rollout restart deployment frontend-deployment
